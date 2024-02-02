@@ -1,0 +1,166 @@
+// тк мы к ним обращаемся везде ниже
+@import 'utils/vars';
+@import 'utils/reset';
+@import 'utils/fonts';
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color:black;
+}
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  border: 1px solid $border-base;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer, // also footer if footer without section
+section,
+.section {
+  position: relative;
+  padding: 40px 0;
+  @media screen and (max-width: $desktopWidth) {
+    padding: 36px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 28px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 20px 0;
+  }
+}
+
+.background_main {  
+  min-width: 1230px;
+  max-width: 1920px; 
+  height: 5000px;
+  margin: 0px auto;
+  background-image: url('@/assets/img/rectangle 2112_.png'), url('@/assets/img/rectangle 2113_.png');
+  background-position: 0 0, 0 1490px;
+  background-repeat:no-repeat;
+  // @media screen and (max-width: 1230px) {
+  //  min-width: 200px;
+  // }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: column;  
+  min-height: 70vh;
+  margin-top: 65px; // if header is fixed do mt: headerHeight
+}
+
+.container {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 0 auto;
+  min-width: 1190px;
+  max-width: 1230px; 
+  // max-width: $lgDesktopWidth;
+  // @media screen and (max-width: $lgDesktopWidth) {
+  //   padding: 0 16px;
+  // }
+  // @media screen and (max-width: $smDesktopWidth) {
+  //   max-width: $tableWidth;
+  // }
+  // @media screen and (max-width: $tableWidth) {
+  //   max-width: $smTableWidth;
+  // }
+  // @media screen and (max-width: $smTableWidth) {
+  //   max-width: $phoneWidth;
+  // }
+  // @media screen and (max-width: $phoneWidth) {
+  //   max-width: $smPhoneWidth;
+  // }
+}
+
+orange-text {
+    background: linear-gradient(90deg,#be3900,#ffb671 99.99%,#f68d65);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // text-shadow: 0 0 #00000000
+  }
+
+.view-sm {
+  max-width: 700px;
+  &.isCenter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    scrollbar-color: #999 #333;
+    width: 8px
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cd561a;
+    border-radius: 8px
+}
+
+::-webkit-scrollbar-track {
+    background: #333
+}
+
+@import './common/_common';

@@ -1,0 +1,47 @@
+.btn {
+  display: inline-block;
+  padding: 14px 55px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 9px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+
+  // default btn
+  &.btnOpran {
+    color: #ffffff;
+    border: 1px solid #be3900;
+    // none
+    background: transparent;
+    &:hover {
+      background:  linear-gradient(180deg, #FD7F43 0%, #842B03 100%);
+      // background: #be3900;
+      // transition: 1s;
+    }
+  }
+
+  // primary btn
+  &.btnPrimary {
+    color: #ffffff;
+    border: 1px solid #be3900;
+    background: linear-gradient(180deg, #fd7f43 0%, #842b03 100%);
+    &:hover {
+      background: none;
+    }
+  }
+
+  // danger btn
+  &.btnDanger {
+    color: #ffffff;
+    border: 1px solid hsl(0, 48%, 48%);
+    background-color: #b53f3f;
+  }
+
+  &.btnWhite {
+    color: #333333;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,78 @@
+// .navbar {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // z-index: 2;
+  // margin-top: 50px;
+  // padding: 20px 0;
+  // background-color: $g-0;
+  // box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+// }
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  img {
+    cursor: pointer;
+  }
+}
+
+.navbar-logo {
+  display: flex;
+  justify-content: space-between;
+  width: 179px;
+  img {
+    cursor: pointer;
+  }
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-item {   
+  text-align: center;   
+  cursor: pointer;
+  &:first-child {
+    width: 110px;
+  }
+  &:nth-child(2) {
+    width: 143px;
+  }
+  &:nth-child(3) {
+    width: 185px;
+  }
+  &:nth-child(4) {
+    width: 125px;
+  }  
+}
+
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: all .5s;
+  color: #c29969;
+  &:hover {
+  color: #ffff;
+  font-weight: 700;
+  }
+  
+  // active link
+  // &.isActive,
+  // &.router-link-active,
+  // &.router-link-exact-active {
+  //   color: #ffff;
+  // }
+}
+
+.dummy {
+  height: 50px;
+  width: 1230px;
+  margin: 0 auto;
+}

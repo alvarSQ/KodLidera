@@ -1,0 +1,32 @@
+.ellipses_glow {
+  background: #5c1704;
+  border-radius: 50%;
+  position: absolute;
+  //   z-index: -1;
+}
+.ellipses_glow_main_big {
+  top: 140px;
+  filter: blur(195px);
+  height: 851px;
+  right: 100px;
+  width: 828px;
+}
+.ellipses_glow_main_min {
+    top: 220px;
+  filter: blur(70px);
+  height: 270px;
+  right: 1380px;
+  width: 260px;
+}
+
+/* Ellipse 386 */
+
+// position: absolute;
+// width: 270px;
+// height: 260px;
+// left: 300px;
+// top: 252px;
+
+// background: #862E15;
+// filter: blur(97px);
+
