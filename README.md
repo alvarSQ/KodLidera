@@ -1,3 +1,4 @@
+kod-lid.argovera.ru
 # landing-shablon
 
 ## Project setup
